@@ -1,0 +1,36 @@
+<% title = "TCC | Contact Us" %>
+
+<%- include('partials/header')%>
+
+<h3>Registration Form</h3>
+<p>Please fill the form fields below</p>
+<form action="/register" method="POST">
+    <p>Firstname: <input type="text" name="firstName" id=""></p>
+    <p>Lastname: <input type="text" name="lastName" id=""></p>
+    <p>Gender: Male <input type="radio" name="gender" id="" value="Male">
+                Female <input type="radio" name="gender"  id="" value="Female">
+    </p>
+
+    <p>Course: <select name="course" id="">
+        <% var programs = ["Web Development",
+                        "Java Programming",
+                        "UI/UX",
+                        "Mobile Development",
+                        "Frontend Development",
+                        "Data Science",
+                        "Graphic Design"
+                        ];
+
+                programs.forEach(function(program){
+                %>
+        <option value="<%= program %>"><%= program %></option>
+        <% }) %>
+
+    </select>
+</p>
+<input type="submit" name="" value="Click to register" id="">
+</form>
+
+<p><a href="/applicant">View Applicant</a></p>
+
+<%- include('partials/footer')%>

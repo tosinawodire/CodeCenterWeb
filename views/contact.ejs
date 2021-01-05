@@ -1,0 +1,37 @@
+<% title = "TCC | Contact Us" %>
+
+<%- include('partials/header')%>
+
+<div class="contact">
+<h2>Our Location</h2>
+<h4>Lagos Office</h4>
+<p>35, Olowu Street</p>
+<p>Ikeja, Lagos</p>
+<h4>Abuja  office</h4>
+<p>The Code Center House</p>
+<p>Plot 35-40, Maitama Road</p>
+<p>FCT</p>
+
+<h4>Johnanesburg office</h4>
+<p>The Code Center House</p>
+<p>Spacco Drive, Sandton</p>
+
+<h4>UAE office</h4>
+<p>Plot 50</p>
+<p>TCC Parkway</p>
+<p>Dubai</p>
+</div>
+
+<div class="enquiry">
+<h2>More Enquiry</h2>
+<form action="/contact" method="POST" >
+    <input type="email" placeholder="Your email" name="mail"/><br><br>
+    <textarea id="" cols="30" rows="10" name="content" placeholder="Comments"></textarea>
+    <button type="submit" name="submit">Click to Send</button>
+    
+</form>
+
+
+</div>
+
+<%- include('partials/footer')%>
